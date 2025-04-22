@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <Routes>
-       <Route path="/" element={<Home />} />
-       <Route path="/features" element={<Features />} />
-       <Route path="*" element={<NotFound />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/features' element={<Features />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

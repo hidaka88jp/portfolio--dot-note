@@ -1,7 +1,7 @@
-export default function Features () {
+export default function Features() {
   return (
     <div>
-    <h1>Features</h1>
-  </div>
-  )
+      <h1>Features</h1>
+    </div>
+  );
 }
