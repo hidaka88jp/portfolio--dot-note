@@ -1,7 +1,13 @@
+import Logo from '../Logo';
+import ModeButton from '../ModeButton';
+
 export default function Header() {
   return (
     <>
-      <h1>Header</h1>
+      <div>
+        <Logo />
+        <ModeButton />
+      </div>
     </>
   );
 }
