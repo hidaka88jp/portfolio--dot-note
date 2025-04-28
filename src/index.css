@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-light: #F3F4EC;
+  --color-primary: #4F6A4C;
+  --color-secondary: #69AB5D;
+  --color-bg-base-dark: #4F6A4C;
+  --color-bg-top-light: #F3F4EC;
+  --color-bg-top-dark: #3B523A;
+  --color-bg-bottom: #30402D;
 }

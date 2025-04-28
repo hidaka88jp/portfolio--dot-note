@@ -1,7 +1,18 @@
+import DarkModeIcon from '../../assets/icon_dark_mode.svg';
+
 export default function ModeButton() {
   return (
     <>
-      <button>ModeButton</button>
+      <button className='bg-primary flex w-28 max-w-full cursor-pointer items-center justify-start gap-2 rounded-md p-2 text-xs font-bold text-white duration-200 hover:opacity-90 focus:opacity-90 sm:w-36 sm:text-base'>
+        <div className='flex h-4 w-4 items-center justify-center rounded-full bg-white sm:h-6 sm:w-6'>
+          <img
+            src={DarkModeIcon}
+            alt='dark mode icon'
+            className='h-2.5 w-2.5 sm:h-4 sm:w-4'
+          />
+        </div>
+        Light Mode
+      </button>
     </>
   );
 }
