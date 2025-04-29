@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import DarkModeIcon from '../../assets/icon_dark_mode.svg';
 import LightModeIcon from '../../assets/icon_light_mode.svg';
 
@@ -8,17 +7,12 @@ type Props = {
 };
 
 export default function ModeButton({ isDarkMode, toggleDarkMode }: Props) {
-  const buttonClass = classNames(
-    'flex w-28 max-w-full cursor-pointer items-center justify-center gap-2 rounded-md p-2 text-xs font-medium text-white duration-200 hover:opacity-90 focus:opacity-90 sm:w-36 sm:text-base',
-    {
-      'bg-primary': !isDarkMode,
-      'bg-secondary': isDarkMode,
-    }
-  );
-
   return (
     <>
-      <button className={buttonClass} onClick={toggleDarkMode}>
+      <button
+        className='bg-primary dark:bg-secondary flex w-28 max-w-full cursor-pointer items-center justify-center gap-2 rounded-md p-2 text-xs font-medium text-white duration-200 hover:opacity-90 focus:opacity-90 sm:w-36 sm:text-base'
+        onClick={toggleDarkMode}
+      >
         <div className='flex h-4 w-4 items-center justify-center rounded-full bg-white sm:h-5 sm:w-5'>
           <img
             src={isDarkMode ? LightModeIcon : DarkModeIcon}
