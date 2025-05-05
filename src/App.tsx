@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router';
 import Home from './pages/Home';
 import Features from './pages/Features';
 import NotFound from './pages/NotFound';
+import AppMetaTags from './components/AppMetaTags';
 import Header from './components/Header';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   return (
     <>
+      <AppMetaTags isDarkMode={isDarkMode} />
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <Routes>
         <Route path='/' element={<Home />} />
