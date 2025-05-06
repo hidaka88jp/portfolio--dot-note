@@ -24,12 +24,16 @@ function App() {
   return (
     <>
       <AppMetaTags isDarkMode={isDarkMode} />
-      <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/features' element={<Features />} />
-        <Route path='*' element={<NotFound />} />
-      </Routes>
+      <header>
+        <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      </header>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home isDarkMode={isDarkMode} />} />
+          <Route path='/features' element={<Features />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </main>
     </>
   );
 }
