@@ -7,9 +7,9 @@ type Props = {
 
 export default function Home({ isDarkMode }: Props) {
   return (
-    <>
+    <div className='flex flex-col gap-20'>
       <Hero isDarkMode={isDarkMode} />
       <Commitment />
-    </>
+    </div>
   );
 }
