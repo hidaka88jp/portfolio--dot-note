@@ -12,7 +12,7 @@ export default function HeroContent() {
         <CheckMarkItem>Password-protected Note Sharing</CheckMarkItem>
         <CheckMarkItem>Completely Free During Beta Period</CheckMarkItem>
       </ul>
-      <LinkButton>Learn More</LinkButton>
+      <LinkButton path={'/features'}>Learn More</LinkButton>
     </div>
   );
 }

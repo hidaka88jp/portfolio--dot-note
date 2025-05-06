@@ -3,12 +3,13 @@ import { FaArrowRight } from 'react-icons/fa';
 
 type Props = {
   children: React.ReactNode;
+  path: string;
 };
 
-export default function LinkButton({ children }: Props) {
+export default function LinkButton({ children, path }: Props) {
   return (
     <Link
-      to='/features'
+      to={path}
       className='bg-primary dark:bg-secondary text-text-light relative flex w-44 max-w-full cursor-pointer items-center justify-center rounded-md px-2 py-3 font-semibold select-none hover:opacity-90 focus:opacity-90'
     >
       {children}
