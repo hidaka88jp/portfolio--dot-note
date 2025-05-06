@@ -3,7 +3,7 @@ import LinkButton from '../LinkButton';
 
 export default function HeroContent() {
   return (
-    <div>
+    <div className='sm:shrink-0'>
       <h1 className='text-primary dark:text-text-light mb-3.5 text-3xl font-bold sm:mb-5'>
         Instant Note Sharing
       </h1>
