@@ -1,10 +1,13 @@
-import { Link } from 'react-router';
+import Hero from '../components/Hero';
 
-export default function Home() {
+type Props = {
+  isDarkMode: boolean;
+};
+
+export default function Home({ isDarkMode }: Props) {
   return (
-    <div>
-      <h1>HOME</h1>
-      <Link to='/features'>Features</Link>
-    </div>
+    <>
+      <Hero isDarkMode={isDarkMode} />
+    </>
   );
 }
