@@ -1,7 +1,9 @@
 import FAQItem from '../FAQItem';
 import SectionTitle from '../SectionTitle';
-import BottomWaveSP from '../../assets/faq-wave-top-sp.png';
-import BottomWavePC from '../../assets/faq-wave-top-pc.png';
+import TopWaveSP from '../../assets/faq-wave-top-sp.png';
+import TopWavePC from '../../assets/faq-wave-top-pc.png';
+import BottomWaveSp from '../../assets/faq-wave-bottom-sp.png';
+import BottomWavePc from '../../assets/faq-wave-bottom-pc.png';
 
 export default function FAQ() {
   const faqItems = [
@@ -23,30 +25,32 @@ export default function FAQ() {
 
   return (
     <div>
+      <img src={TopWaveSP} alt='wave-sp' className='-mb-px w-full sm:hidden' />
       <img
-        src={BottomWaveSP}
-        alt='wave-sp'
-        className='-mb-px w-full sm:hidden'
-      />
-      <img
-        src={BottomWavePC}
+        src={TopWavePC}
         alt='wave-pc'
         className='-mb-px hidden w-full sm:block'
       />
-      <div className='bg-bg-bottom'>
+      <div className='bg-bg-bottom -mb-px'>
         <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
           <SectionTitle title='FAQ' textColor='text-text-light' />
           {faqItems.map((item, index) => (
-            <div className='sm:w-full sm:max-w-xl'>
-              <FAQItem
-                key={index}
-                question={item.question}
-                answer={item.answer}
-              />
+            <div key={index} className='sm:w-full sm:max-w-xl'>
+              <FAQItem question={item.question} answer={item.answer} />
             </div>
           ))}
         </div>
       </div>
+      <img
+        src={BottomWaveSp}
+        alt='bottom-wave-sp'
+        className='-mb-px w-full sm:hidden'
+      />
+      <img
+        src={BottomWavePc}
+        alt='bottom-wave-pc'
+        className='-mb-px hidden w-full sm:block'
+      />
     </div>
   );
 }
