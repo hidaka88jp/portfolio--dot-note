@@ -21,7 +21,7 @@ export default function CommitmentCard({ icon, title, description }: Props) {
         <img src={iconSrc} alt='Features' />
       </div>
       <h3 className='text-lg font-bold'>{title}</h3>
-      <p className='text-sm'>{description}</p>
+      <p className='text-center text-sm'>{description}</p>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 type Props = {
   title: string;
+  textColor: string;
 };
 
-export default function SectionTitle({ title }: Props) {
+export default function SectionTitle({ title, textColor }: Props) {
   return (
-    <h2 className='text-primary dark:text-text-light text-center text-2xl font-bold'>
-      {title}
-    </h2>
+    <h2 className={`text-center text-2xl font-bold ${textColor}`}>{title}</h2>
   );
 }
