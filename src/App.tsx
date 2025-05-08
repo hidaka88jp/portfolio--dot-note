@@ -5,6 +5,7 @@ import Features from './pages/Features';
 import NotFound from './pages/NotFound';
 import AppMetaTags from './components/AppMetaTags';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -34,6 +35,9 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
+      <footer className='dark:bg-bg-base-dark'>
+        <Footer />
+      </footer>
     </>
   );
 }
