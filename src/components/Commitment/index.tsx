@@ -4,7 +4,10 @@ import CommitmentCard from '../CommitmentCard';
 export default function Commitment() {
   return (
     <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
-      <SectionTitle title='Commitment to Comfort' />
+      <SectionTitle
+        title='Commitment to Comfort'
+        textColor='text-primary dark:text-text-light'
+      />
       <div className='flex flex-col items-center justify-center gap-10 sm:flex-row sm:justify-between'>
         <CommitmentCard
           icon='features'

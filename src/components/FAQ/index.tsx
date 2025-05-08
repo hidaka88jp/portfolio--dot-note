@@ -4,7 +4,7 @@ export default function FAQ() {
   return (
     <>
       <div className='bg-bg-bottom'>
-        <SectionTitle title='FAQ' />
+        <SectionTitle title='FAQ' textColor='text-text-light' />
       </div>
     </>
   );
