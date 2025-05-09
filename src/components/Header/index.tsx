@@ -13,7 +13,7 @@ export default function Header({ isDarkMode, toggleDarkMode }: Props) {
       <div className='bg-bg-top-light dark:bg-bg-top-dark'>
         <div className='mx-auto -mb-[1px] flex w-full max-w-96 items-center justify-between p-5 sm:max-w-5xl'>
           <Link to='/'>
-            <Logo />
+            <Logo isDarkMode={isDarkMode} />
           </Link>
           <ModeButton isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         </div>
