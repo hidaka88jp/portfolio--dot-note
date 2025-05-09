@@ -19,7 +19,7 @@ export default function FAQ() {
     {
       question: 'Is this service free?',
       answer:
-        'Yes, the service is completely free during the beta phase.<br /> After the official release, we will offer paid plans as well.',
+        'Yes, the service is completely free during the beta phase.<br />After the official release, we will offer paid plans as well.',
     },
   ];
 
@@ -34,11 +34,15 @@ export default function FAQ() {
       <div className='bg-bg-bottom -mb-px'>
         <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
           <SectionTitle title='FAQ' textColor='text-text-light' />
-          {faqItems.map((item, index) => (
-            <div key={index} className='sm:w-full sm:max-w-xl'>
-              <FAQItem question={item.question} answer={item.answer} />
-            </div>
-          ))}
+          <div className='space-y-10 sm:w-full sm:max-w-2xl sm:space-y-20 sm:pl-20 lg:pl-30'>
+            {faqItems.map((item, index) => (
+              <FAQItem
+                key={index}
+                question={item.question}
+                answer={item.answer}
+              />
+            ))}
+          </div>
         </div>
       </div>
       <img
