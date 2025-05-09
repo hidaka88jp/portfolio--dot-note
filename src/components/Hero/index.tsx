@@ -22,12 +22,12 @@ export default function Hero({ isDarkMode }: Props) {
         <>
           <img
             src={TopWaveDarkSp}
-            alt='wave-light-sp'
+            alt='wave-dark-sp'
             className='w-full sm:hidden'
           />
           <img
             src={TopWaveDarkPc}
-            alt='wave-light-sp'
+            alt='wave-dark-sp'
             className='hidden w-full sm:block'
           />
         </>
