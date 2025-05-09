@@ -1,9 +1,5 @@
 import FAQItem from '../FAQItem';
 import SectionTitle from '../SectionTitle';
-import TopWaveSP from '../../assets/faq-wave-top-sp.png';
-import TopWavePC from '../../assets/faq-wave-top-pc.png';
-import BottomWaveSp from '../../assets/faq-wave-bottom-sp.png';
-import BottomWavePc from '../../assets/faq-wave-bottom-pc.png';
 
 export default function FAQ() {
   const faqItems = [
@@ -25,12 +21,15 @@ export default function FAQ() {
 
   return (
     <div>
-      <img src={TopWaveSP} alt='wave-sp' className='-mb-px w-full sm:hidden' />
-      <img
-        src={TopWavePC}
-        alt='wave-pc'
-        className='-mb-px hidden w-full sm:block'
-      />
+      <div className='-mb-px w-full'>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+          <path
+            className='fill-bg-bottom'
+            fillOpacity='1'
+            d='M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,149.3C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'
+          ></path>
+        </svg>
+      </div>
       <div className='bg-bg-bottom -mb-px'>
         <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
           <SectionTitle title='FAQ' textColor='text-text-light' />
@@ -45,16 +44,15 @@ export default function FAQ() {
           </div>
         </div>
       </div>
-      <img
-        src={BottomWaveSp}
-        alt='bottom-wave-sp'
-        className='-mb-px w-full sm:hidden'
-      />
-      <img
-        src={BottomWavePc}
-        alt='bottom-wave-pc'
-        className='-mb-px hidden w-full sm:block'
-      />
+      <div className='w-full'>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 160'>
+          <path
+            className='fill-bg-bottom'
+            fillOpacity='1'
+            d='M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,149.3C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 }
