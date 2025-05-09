@@ -1,15 +1,7 @@
 import HeroImage from '../HeroImage';
 import HeroContent from '../HeroContent';
-import TopWaveLightSp from '../../assets/top-kv-wave-bottom-light-sp.png';
-import TopWaveLightPc from '../../assets/top-kv-wave-bottom-light-pc.png';
-import TopWaveDarkSp from '../../assets/top-kv-wave-bottom-dark-sp.png';
-import TopWaveDarkPc from '../../assets/top-kv-wave-bottom-dark-pc.png';
 
-type Props = {
-  isDarkMode: boolean;
-};
-
-export default function Hero({ isDarkMode }: Props) {
+export default function Hero() {
   return (
     <div>
       <div className='bg-bg-top-light dark:bg-bg-top-dark'>
@@ -18,33 +10,15 @@ export default function Hero({ isDarkMode }: Props) {
           <HeroContent />
         </div>
       </div>
-      {isDarkMode ? (
-        <>
-          <img
-            src={TopWaveDarkSp}
-            alt='wave-dark-sp'
-            className='w-full sm:hidden'
-          />
-          <img
-            src={TopWaveDarkPc}
-            alt='wave-dark-sp'
-            className='hidden w-full sm:block'
-          />
-        </>
-      ) : (
-        <>
-          <img
-            src={TopWaveLightSp}
-            alt='wave-light-sp'
-            className='w-full sm:hidden'
-          />
-          <img
-            src={TopWaveLightPc}
-            alt='wave-light-pc'
-            className='hidden w-full sm:block'
-          />
-        </>
-      )}
+      <div className='w-full'>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 160'>
+          <path
+            className='fill-bg-top-light dark:fill-bg-top-dark'
+            fill-opacity='1'
+            d='M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,149.3C1120,160,1280,128,1360,112L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'
+          ></path>
+        </svg>
+      </div>
     </div>
   );
 }

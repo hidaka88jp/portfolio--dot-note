@@ -36,52 +36,54 @@ export default function Features({ isDarkMode }: Props) {
   ];
 
   return (
-    <div>
-      <div className='bg-bg-top-light dark:bg-bg-top-dark pb-10 sm:pb-0'>
-        <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-10 px-5 pt-10 sm:max-w-5xl sm:gap-24'>
-          <SectionTitle
-            title='Features'
-            textColor='text-primary dark:text-text-light'
-          />
-          {FeaturesCardItems.map((item, index) => (
-            <FeaturesCard
-              key={index}
-              image={item.image}
-              title={item.title}
-              description={item.description}
-              isReversed={index % 2 === 1}
+    <>
+      <div>
+        <div className='bg-bg-top-light dark:bg-bg-top-dark pb-10 sm:pb-0'>
+          <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-10 px-5 pt-10 sm:max-w-5xl sm:gap-24'>
+            <SectionTitle
+              title='Features'
+              textColor='text-primary dark:text-text-light'
             />
-          ))}
-          <LinkButton path='/'>Back to Home</LinkButton>
+            {FeaturesCardItems.map((item, index) => (
+              <FeaturesCard
+                key={index}
+                image={item.image}
+                title={item.title}
+                description={item.description}
+                isReversed={index % 2 === 1}
+              />
+            ))}
+            <LinkButton path='/'>Back to Home</LinkButton>
+          </div>
         </div>
+        {isDarkMode ? (
+          <>
+            <img
+              src={TopWaveDarkSp}
+              alt='wave-dark-sp'
+              className='w-full sm:hidden'
+            />
+            <img
+              src={TopWaveDarkPc}
+              alt='wave-dark-sp'
+              className='hidden w-full sm:block'
+            />
+          </>
+        ) : (
+          <>
+            <img
+              src={TopWaveLightSp}
+              alt='wave-light-sp'
+              className='w-full sm:hidden'
+            />
+            <img
+              src={TopWaveLightPc}
+              alt='wave-light-pc'
+              className='hidden w-full sm:block'
+            />
+          </>
+        )}
       </div>
-      {isDarkMode ? (
-        <>
-          <img
-            src={TopWaveDarkSp}
-            alt='wave-dark-sp'
-            className='w-full sm:hidden'
-          />
-          <img
-            src={TopWaveDarkPc}
-            alt='wave-dark-sp'
-            className='hidden w-full sm:block'
-          />
-        </>
-      ) : (
-        <>
-          <img
-            src={TopWaveLightSp}
-            alt='wave-light-sp'
-            className='w-full sm:hidden'
-          />
-          <img
-            src={TopWaveLightPc}
-            alt='wave-light-pc'
-            className='hidden w-full sm:block'
-          />
-        </>
-      )}
-    </div>
+    </>
   );
 }

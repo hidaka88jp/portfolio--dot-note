@@ -30,7 +30,7 @@ function App() {
       </header>
       <main className='dark:bg-bg-base-dark -mb-px'>
         <Routes>
-          <Route path='/' element={<Home isDarkMode={isDarkMode} />} />
+          <Route path='/' element={<Home />} />
           <Route
             path='/features'
             element={<Features isDarkMode={isDarkMode} />}

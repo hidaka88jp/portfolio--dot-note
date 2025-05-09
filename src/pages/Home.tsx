@@ -2,14 +2,10 @@ import Hero from '../components/Hero';
 import Commitment from '../components/Commitment';
 import FAQ from '../components/FAQ';
 
-type Props = {
-  isDarkMode: boolean;
-};
-
-export default function Home({ isDarkMode }: Props) {
+export default function Home() {
   return (
     <div className='flex flex-col gap-10'>
-      <Hero isDarkMode={isDarkMode} />
+      <Hero />
       <Commitment />
       <FAQ />
     </div>
