@@ -28,10 +28,13 @@ function App() {
       <header>
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </header>
-      <main className='dark:bg-bg-base-dark'>
+      <main className='dark:bg-bg-base-dark -mb-px'>
         <Routes>
           <Route path='/' element={<Home isDarkMode={isDarkMode} />} />
-          <Route path='/features' element={<Features />} />
+          <Route
+            path='/features'
+            element={<Features isDarkMode={isDarkMode} />}
+          />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
