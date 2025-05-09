@@ -22,7 +22,7 @@ export default function FAQ() {
   return (
     <div>
       <div className='-mb-px w-full'>
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 240'>
           <path
             className='fill-bg-bottom'
             fillOpacity='1'
@@ -30,7 +30,7 @@ export default function FAQ() {
           ></path>
         </svg>
       </div>
-      <div className='bg-bg-bottom -mb-px'>
+      <div className='bg-bg-bottom -mb-px pt-5 sm:pt-0'>
         <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
           <SectionTitle title='FAQ' textColor='text-text-light' />
           <div className='space-y-10 sm:w-full sm:max-w-2xl sm:space-y-20 sm:pl-20 lg:pl-30'>
