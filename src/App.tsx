@@ -31,10 +31,7 @@ function App() {
       <main className='dark:bg-bg-base-dark -mb-px'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route
-            path='/features'
-            element={<Features isDarkMode={isDarkMode} />}
-          />
+          <Route path='/features' element={<Features />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </main>
