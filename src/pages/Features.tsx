@@ -31,7 +31,7 @@ export default function Features() {
     <>
       <div>
         <div className='bg-bg-top-light dark:bg-bg-top-dark pb-10 sm:pb-0'>
-          <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-10 px-5 pt-10 sm:max-w-5xl sm:gap-24'>
+          <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-10 px-5 pt-10 sm:max-w-2xl sm:gap-24 xl:max-w-5xl'>
             <SectionTitle
               title='Features'
               textColor='text-primary dark:text-text-light'

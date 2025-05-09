@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
       <div className='bg-bg-top-light dark:bg-bg-top-dark'>
-        <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-8 p-5 sm:max-w-5xl sm:flex-row-reverse sm:justify-between'>
+        <div className='mx-auto -mb-[1px] flex w-full max-w-96 flex-col items-center justify-center gap-8 p-5 sm:max-w-2xl sm:flex-row-reverse sm:justify-between xl:max-w-5xl'>
           <HeroImage />
           <HeroContent />
         </div>

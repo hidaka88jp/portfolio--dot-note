@@ -30,8 +30,8 @@ export default function FAQ() {
           ></path>
         </svg>
       </div>
-      <div className='bg-bg-bottom -mb-px py-5 sm:py-0'>
-        <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-5xl sm:gap-20'>
+      <div className='bg-bg-bottom -mb-px py-5 xl:py-0'>
+        <div className='mx-auto flex w-full max-w-96 flex-col items-center justify-center gap-10 p-5 sm:max-w-2xl sm:gap-20 xl:max-w-5xl'>
           <SectionTitle title='FAQ' textColor='text-text-light' />
           <div className='space-y-10 sm:w-full sm:max-w-2xl sm:space-y-20 sm:pl-20 lg:pl-30'>
             {faqItems.map((item, index) => (
