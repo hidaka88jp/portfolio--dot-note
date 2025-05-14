@@ -44,7 +44,8 @@ It was created as part of my front-end development portfolio to demonstrate Reac
     <th>Frontend</th>
     <td>
       <img src="https://img.shields.io/badge/React-444.svg?logo=react">
-      <img src="https://img.shields.io/badge/React Router-594C4C.svg?logo=reactrouter">
+      <img src="https://img.shields.io/badge/React Router-594F4D.svg?logo=reactrouter">
+      <img src="https://img.shields.io/badge/TypeScript-4D4F59.svg?logo=typescript">
       <img src="https://img.shields.io/badge/Tailwind CSS-4C5359.svg?logo=tailwindcss">
       <img src="https://img.shields.io/badge/Vite-4C4D59.svg?logo=vite">
     </td>
@@ -61,7 +62,7 @@ It was created as part of my front-end development portfolio to demonstrate Reac
     <th>Testing</th>
     <td>
       <img src="https://img.shields.io/badge/Vitest-54594C.svg?logo=vitest">
-      <img src="https://img.shields.io/badge/Testing Library-594C4C.svg?logo=testinglibrary">
+      <img src="https://img.shields.io/badge/Testing Library-594D4D.svg?logo=testinglibrary">
     </td>
   </tr>
   <tr>
